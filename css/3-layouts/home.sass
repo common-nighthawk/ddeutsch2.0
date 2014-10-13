@@ -1,0 +1,73 @@
+body
+  +outer-container
+  font-family: $monospace
+
+.box
+  background: tint(red, 60%)
+  +size(1em 3em)
+  +span-columns(2)
+  text-align: center
+  border-radius: 0.5em
+
+.hello-text
+  font-size: 3em
+  margin-bottom: 0
+  text-align: left
+
+.lift
+  margin-top: -0.25em
+
+.name
+  border: dotted
+  border-width: 1px
+  padding: 4px
+  min-width: 3.5em
+
+button
+  height: 0.75em
+  line-height: 0.1em
+  font-size: 0.75em
+  border-radius: 0.5em
+
+#play-button, #pause-button, #restart-button, #play-gp, #play-os, #play-fr
+  +span-columns(12)
+
+#play-button, #pause-button, #restart-button
+  background: tint(green, 60%)
+
+a
+  color: #46b8da
+
+img
+  display: inline-block
+  verticle-align: middle
+  max-width: 10vw
+  border: dotted
+  border-width: 1px
+  width: 100%
+  height: 100%
+
+#hidden-img-1, #hidden-img-2, #hidden-img-3, #hidden-img-4, #hidden-img-5, #hidden-img-6, #hidden-img-7, #hidden-img-8, #hidden-img-9, #hidden-img-10, #hidden-img-11, #hidden-img-12, #hidden-img-13, #hidden-img-14, #hidden-img-15, #hidden-img-16, #hidden-img-17, #hidden-img-18, #hidden-img-19, #hidden-img-20
+  width: 60px
+  height: 60px
+
+.song-list, .control-list
+  +span-columns(3)
+  margin-bottom: 1em
+
+.song-list
+  +shift(2)
+
+.control-list
+  +shift(2)
+
+.main
+  clear: both
+
+strong
+  font-size: 1.5em
+
+p
+  margin-left: 20px
+  margin-right: 20px
+  text-align: justify
